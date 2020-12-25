@@ -1,0 +1,81 @@
+/*style.css*/
+
+*{margin: 0; padding: 0;}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: #777777;
+  overflow: hidden;
+  background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url("https://images.pexels.com/photos/1303098/pexels-photo-1303098.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260") no-repeat;
+}
+
+body {
+  display: table;
+  margin: 0 auto;
+}
+
+.tree {
+  top: 50%;
+  text-align: center;
+}
+
+.floating {
+  position: relative;
+  animation-name: floating;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  z-index: 1;
+}
+
+.floatingChr {
+  opacity: 0;
+  animation-name: floating;
+  animation-delay: 1s;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes floating {
+  0% { transform: translate(0, 50px); opacity: 0; }
+  /*50% { transform: translate(0, 15px); }*/
+  100% { transform: translate(0, -0px); opacity: 1; }
+}
+
+.letter {
+  top: 10%;
+  text-align: center;
+  margin : 0;
+  padding: 0;
+  position: relative;
+  z-index: 2;
+}
+
+.chr {
+  top: -20%;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  z-index: 3;
+  margin: 0;
+  padding: 0;
+}
+
+.choco {
+  position: relative;
+  float: center;
+  width: auto;
+  z-index: 2;
+}
+
+.beloved {
+  float: left;
+  width: auto;
+}
+
+.oming {
+  float: right;
+  width: auto;
+}
